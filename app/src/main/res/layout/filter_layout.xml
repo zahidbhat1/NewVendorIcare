@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_box"
+        android:orientation="vertical"
+        app:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/circular_bold"
+                android:text="Filter"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <RadioButton
+                    android:id="@+id/radioAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:fontFamily="@font/circular_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="All Bookings"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioPending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:fontFamily="@font/circular_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Pending Pending"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioAccepted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:fontFamily="@font/circular_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Accepted Bookings"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioOld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:fontFamily="@font/circular_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Old Bookings"
+                    android:textSize="@dimen/_14sdp" />
+                <RadioButton
+                    android:id="@+id/radioRejected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_20sdp"
+                    android:fontFamily="@font/circular_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Rejected Bookings"
+                    android:textSize="@dimen/_14sdp" />
+            </RadioGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

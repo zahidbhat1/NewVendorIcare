@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="colorPrimary">#E92F65</color>
+    <color name="colorPrimaryDark">#E92F65</color>
+    <color name="colorAccent">#E92F65</color>
+    <color name="purple_500">#0A3567</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="text">#202020</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#787676</color>
+    <color name="grey_l">#979393</color>
+    <color name="black08">#08000000</color>
+    <color name="light_grey">#C1C0C0</color>
+    <color name="light_grey_new">#0D0C2D62</color>
+    <color name="background_white_grey">#DDDADA</color>
+    <color name="fb_blue">#425893</color>
+    <color name="golden">#BCA651</color>
+    <color name="light_blue_bg">#ECEFF3</color>
+    <color name="orange">#EA4F38</color>
+    <color name="red">#F05C5D</color>
+    <color name="red_bg">#0DF05C5D</color>
+    <color name="cart_bg">#F7F3E9</color>
+    <color name="green">#5fbe02</color>
+    <color name="green_bg">#0D37BA6E</color>
+    <color name="colorChat">#59DAA0</color>
+    <color name="colorGreen">#285C45</color>
+    <color name="colorSelected">#EFEDED</color>
+    <color name="textColor">#202020</color>
+    <color name="textColor_50">#80484848</color>
+</resources>
