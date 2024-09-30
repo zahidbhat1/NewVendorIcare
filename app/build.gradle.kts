@@ -24,7 +24,7 @@ android {
     buildTypes {
         release {
             debug {
-                buildConfigField("String", "API_URL", "\"http://192.168.100.21/hospital/public/\"")
+                buildConfigField("String", "API_URL", "\"http://192.168.100.13/hospital/public/\"")
                 buildConfigField("String", "SOCKET_BASE_URL", "\"http://192.168.100.30:4000\"")
                 buildConfigField("String", "IMAGE_URL", "\"http://192.168.241.45/\"")
                 buildConfigField("String", "AG_APP_ID", "\"52da6c314e4e43c69907e9b6b60f6706\"")
@@ -153,7 +153,8 @@ android {
         implementation("com.google.android.gms:play-services-maps:19.0.0")
         implementation("com.myfatoorah:myfatoorah:2.2.0")
         // agora
-        implementation("io.agora.rtc:voice-sdk:4.2.6")
+        implementation("io.agora.rtc:full-sdk:4.4.1")
+        // socket
         implementation("io.socket:socket.io-client:2.1.0") {
             exclude(group = "org.json", module = "json")
             implementation("com.jakewharton.timber:timber:5.0.1")

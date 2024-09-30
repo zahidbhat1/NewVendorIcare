@@ -25,6 +25,7 @@ import com.raybit.newvendor.data.models.ConsultationRequest
 import com.raybit.newvendor.data.models.login.LoginResponse
 import com.raybit.newvendor.data.models.service.Category
 import com.raybit.newvendor.databinding.FragmentRequestsBinding
+import com.raybit.newvendor.ui.activity.VideoCallingActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collectLatest
@@ -141,10 +142,15 @@ class RequestFragment(var homeFragment: HomeFragment) :
                     )
                 )
             }else  if(request.type== CallType.CALL){
-                var it=Intent(requireContext(), CallingActivity::class.java)
+                val it=Intent(requireContext(), CallingActivity::class.java)
                 it.putExtra("REQUEST_ID",request.id.toString())
                 requireContext().startActivity(it)
 
+            }
+            else if(request.type==CallType.VIDEO){
+                val it= Intent(requireContext(),VideoCallingActivity::class.java)
+                it.putExtra("REQUEST_ID",request.id.toString())
+                requireContext().startActivity(it)
             }
         }
     }
